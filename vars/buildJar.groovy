@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
 def call() {
-    sh 'mvn clean package'
+    sh 'mvn -Dmaven.test.skip=true clean package'
 }
